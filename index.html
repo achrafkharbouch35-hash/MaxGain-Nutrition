@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORGE NUTRITION | Push Your Limits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div class="announcement">✳ LIVRAISON OFFERTE DÈS 600 DH — FUEL YOUR NEXT LEVEL</div>
+
+  <header class="header" id="top">
+    <a class="logo" href="#top">F<span>✳</span> <small>FORGE<br>NUTRITION</small></a>
+
+    <nav class="nav" id="nav">
+      <a href="#top">Accueil</a>
+      <a href="#shop">Boutique</a>
+      <a href="#about">Notre vision</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="search-open" aria-label="Rechercher"><i data-lucide="search"></i></button>
+      <button class="icon-btn" id="cart-open" aria-label="Panier">
+        <i data-lucide="shopping-bag"></i><span class="cart-count">0</span>
+      </button>
+      <button class="icon-btn mobile-menu" id="menu-open" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">PERFORMANCE · NUTRITION · RÉCUPÉRATION</div>
+        <h1>FORGE<br><span>YOUR</span><br>LIMITS<span class="orange">.</span></h1>
+        <p>Chaque séance compte. Découvre les essentiels de nutrition sportive pour accompagner ta routine et repousser tes limites.</p>
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-primary">DÉCOUVRIR LA BOUTIQUE <i data-lucide="arrow-up-right"></i></a>
+          <a href="#about" class="btn btn-outline">NOTRE APPROCHE</a>
+        </div>
+        <div class="hero-note"><span>✳</span><div><b>La discipline avant tout.</b><small>Construis ta routine, un jour à la fois.</small></div></div>
+      </div>
+
+      <div class="hero-art" id="hero-art">
+        <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+        <div class="glow"></div>
+        <div class="hero-tub tub-back">
+          <div class="lid"></div><div class="tub-label"><b>FORGE</b><hr><strong>CREATINE<br>MONOHYDRATE</strong><small>PURE FORMULA / 300 G</small></div>
+        </div>
+        <div class="hero-tub tub-front">
+          <div class="lid"></div><div class="tub-label"><b>FORGE</b><hr><strong>WHEY<br><em>PROTEIN</em></strong><span>CHOCOLATE</span><small>PROTEIN BLEND / 1 KG</small></div>
+        </div>
+        <div class="float-tag tag-one">⚡ TRAIN<br><b>HARDER</b></div>
+        <div class="float-tag tag-two">01 — BUILT FOR<br><b>CONSISTENCY</b></div>
+        <div class="vertical-label">SPORTS NUTRITION / EST. 2026</div>
+      </div>
+      <div class="hero-footer"><span>01 — LA PERFORMANCE COMMENCE ICI</span><a href="#shop">DÉFILER ↓</a></div>
+    </section>
+
+    <div class="ticker"><div class="ticker-track">
+      <span>TRAIN WITH PURPOSE ✳ RECOVER WITH INTENT ✳ REPEAT WITH DISCIPLINE ✳ </span>
+      <span>TRAIN WITH PURPOSE ✳ RECOVER WITH INTENT ✳ REPEAT WITH DISCIPLINE ✳ </span>
+    </div></div>
+
+    <section class="section shop" id="shop">
+      <div class="section-heading reveal">
+        <div><div class="eyebrow">LE CATALOGUE FORGE</div><h2>CHOISIS TON<br><span>CARBURANT.</span></h2></div>
+        <p>Des essentiels pour accompagner ta routine sportive. Sélectionne tes produits et compose ton stack.</p>
+      </div>
+
+      <div class="shop-tools">
+        <div class="filters">
+          <button class="filter active" data-filter="all">Tout</button>
+          <button class="filter" data-filter="protein">Protéines</button>
+          <button class="filter" data-filter="performance">Performance</button>
+          <button class="filter" data-filter="wellness">Bien-être</button>
+        </div>
+        <select id="sort" aria-label="Trier les produits">
+          <option value="featured">Sélection</option>
+          <option value="low">Prix croissant</option>
+          <option value="high">Prix décroissant</option>
+        </select>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="shop-bottom"><span>DES ESSENTIELS. PAS DE RACCOURCIS.</span><a href="#stack">COMPOSER MON STACK ↗</a></div>
+    </section>
+
+    <section class="stack" id="stack">
+      <div class="stack-copy reveal">
+        <div class="eyebrow">TA ROUTINE, TON RYTHME</div>
+        <h2>BUILD<br>YOUR <span>STACK.</span></h2>
+        <p>Une routine adaptée commence par un objectif clair. Explore les catégories qui peuvent accompagner tes entraînements.</p>
+        <a href="#shop" class="btn btn-dark">EXPLORER LES ESSENTIELS ↗</a>
+      </div>
+      <div class="stack-cards reveal">
+        <a href="#shop" class="stack-card"><small>01 / DAILY</small><div><span>01</span><h3>LES<br>FONDATIONS</h3></div><p>Protéines & routine</p><i data-lucide="arrow-up-right"></i></a>
+        <a href="#shop" class="stack-card"><small>02 / TRAINING</small><div><span>02</span><h3>MODE<br>PERFORMANCE</h3></div><p>Les essentiels du training</p><i data-lucide="arrow-up-right"></i></a>
+        <a href="#shop" class="stack-card"><small>03 / RECOVERY</small><div><span>03</span><h3>LE TEMPS<br>DE RÉCUPÉRER</h3></div><p>Récupération & bien-être</p><i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-art reveal"><div class="stamp">NO<br>SHORT<br>CUTS<span>✳</span></div><small>FORGE / PRINCIPLE 001</small></div>
+      <div class="about-copy reveal">
+        <div class="eyebrow">PLUS QU’UN POT</div>
+        <h2>LA FORCE SE<br><span>CONSTRUIT.</span></h2>
+        <p>Les progrès viennent de la régularité : entraînement adapté, alimentation équilibrée, sommeil et récupération. Les compléments peuvent compléter une routine, pas remplacer ses fondations.</p>
+        <div class="principle"><span>01</span><div><b>TRANSPARENCE</b><small>Des informations claires sur les produits.</small></div></div>
+        <div class="principle"><span>02</span><div><b>RÉGULARITÉ</b><small>Des habitudes durables, séance après séance.</small></div></div>
+        <div class="principle"><span>03</span><div><b>TON RYTHME</b><small>Une approche adaptée à tes besoins.</small></div></div>
+      </div>
+    </section>
+
+    <section class="quote"><span>“</span><h2>LE RÉSULTAT EST DANS LA <em>RÉPÉTITION.</em></h2><small>FORGE MINDSET — 001</small></section>
+
+    <section class="section faq" id="faq">
+      <div class="reveal"><div class="eyebrow">BESOIN D’INFO ?</div><h2>QUESTIONS<br><span>FRÉQUENTES.</span></h2><p>Quelques réponses utiles avant de choisir tes produits.</p></div>
+      <div class="faq-list reveal">
+        <details><summary>Les compléments remplacent-ils un repas ? <i data-lucide="plus"></i></summary><p>Non. Ils sont destinés à compléter une alimentation variée et équilibrée, pas à remplacer systématiquement les repas.</p></details>
+        <details><summary>Comment choisir un produit ? <i data-lucide="plus"></i></summary><p>Considère tes besoins, ton alimentation et ton programme. Lis l'étiquette et demande conseil à un professionnel de santé en cas de doute.</p></details>
+        <details><summary>Le paiement en ligne est-il activé ? <i data-lucide="plus"></i></summary><p>Non, cette version est une démonstration front-end. Un backend et une solution de paiement doivent être connectés pour encaisser des commandes.</p></details>
+        <details><summary>Livrez-vous partout au Maroc ? <i data-lucide="plus"></i></summary><p>Les informations de livraison sont des exemples. Configure les villes desservies, les frais et les délais réels avant publication.</p></details>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div><div class="eyebrow">RESTE DANS LE GAME</div><h2>REÇOIS LE<br><span>SIGNAL.</span></h2><p>Nouveautés et actualités pour ta routine.</p></div>
+      <form id="newsletter-form"><label for="email">TON ADRESSE E-MAIL</label><div class="email-row"><input id="email" type="email" placeholder="toi@exemple.com" required><button type="submit" aria-label="S'inscrire">↗</button></div><small id="newsletter-msg">Démo : aucune donnée ne sera envoyée.</small></form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#top">F<span>✳</span> <small>FORGE<br>NUTRITION</small></a>
+    <p>BUILT BY DISCIPLINE. POWERED BY YOU.</p>
+    <div><a href="#shop">Boutique</a><a href="#about">Notre vision</a><a href="#faq">FAQ</a></div>
+    <small>© 2026 FORGE NUTRITION — MAQUETTE DE DÉMONSTRATION</small>
+  </footer>
+
+  <div class="search-modal" id="search-modal">
+    <div class="search-box"><button id="search-close" class="close-btn">✕</button><div class="eyebrow">RECHERCHE PRODUIT</div><h2>QU’EST-CE QU’IL TE FAUT ?</h2><input id="search-input" type="search" placeholder="Ex. whey, créatine…"><div id="search-results"></div></div>
+  </div>
+
+  <div class="backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-head"><div><div class="eyebrow">TA SÉLECTION</div><h2>MON PANIER <small id="cart-total-count">(0)</small></h2></div><button id="cart-close" class="close-btn">✕</button></div>
+    <div id="cart-items"></div>
+    <div id="cart-empty"><i data-lucide="shopping-bag"></i><h3>Ton panier est vide.</h3><p>Ajoute tes essentiels pour commencer.</p><button class="btn btn-primary" id="continue-shopping">DÉCOUVRIR LES PRODUITS</button></div>
+    <div class="cart-bottom" id="cart-bottom"><div><span>SOUS-TOTAL</span><b id="subtotal">0 DH</b></div><p>Les frais de livraison seront calculés à la commande.</p><button class="btn btn-primary" id="checkout">PASSER À LA COMMANDE ↗</button><small>Démo uniquement — aucun paiement réel.</small></div>
+  </aside>
+
+  <div class="toast" id="toast">✓ <span>Produit ajouté au panier</span></div>
+  <button class="back-top" id="back-top" aria-label="Retour en haut">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
