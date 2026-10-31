@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#101010">
-  <title>FORGE NUTRITION | Fuel Your Potential</title>
+  <title>FORGE NUTRITION | Sports Nutrition</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -12,179 +12,129 @@
 <body>
 
 <header class="header">
-  <a href="#" class="logo">FORGE<span>.</span></a>
+  <a class="logo" href="#">FORGE<span>.</span></a>
 
   <nav class="nav" id="nav">
     <a href="#home">Accueil</a>
-    <a href="#shop">Produits</a>
-    <a href="#stacks">Packs</a>
+    <a href="#products">Produits</a>
     <a href="#about">À propos</a>
-    <a href="https://instagram.com/TON_INSTAGRAM" target="_blank" rel="noopener">Instagram ↗</a>
+    <a href="#contact">Contact</a>
+    <a class="instagram-link" href="https://instagram.com/" target="_blank">Instagram ↗</a>
   </nav>
 
   <div class="header-actions">
     <button id="search-open" aria-label="Rechercher">⌕</button>
-    <button id="cart-open" class="cart-button">
-      Panier <span class="cart-count">0</span>
-    </button>
-    <button id="menu-open" class="menu-button" aria-label="Menu">☰</button>
+    <button id="cart-open" aria-label="Panier">Panier (<span id="cart-count">0</span>)</button>
+    <button id="menu-open" aria-label="Menu">☰</button>
   </div>
 </header>
 
 <main>
-  <section class="hero" id="home">
-    <div class="hero-copy">
-      <p class="eyebrow">PERFORMANCE • FORCE • DISCIPLINE</p>
-      <h1>BUILT<br>TO <span>BE</span><br>STRONG.</h1>
-      <p class="hero-description">
-        Des compléments sélectionnés pour accompagner
-        tes entraînements et tes objectifs sportifs.
-      </p>
-      <a href="#shop" class="primary-button">DÉCOUVRIR LES PRODUITS ↗</a>
-      <div class="hero-note">NO EXCUSES. JUST PROGRESS.</div>
-    </div>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">PERFORMANCE • FORCE • DISCIPLINE</p>
+    <h1>BUILT TO<br><span>PERFORM.</span></h1>
+    <p>Repousse tes limites. Découvre notre sélection de nutrition sportive.</p>
+    <a href="#products" class="primary-btn">DÉCOUVRIR LES PRODUITS ↗</a>
+  </div>
+  <div class="hero-art">
+    <div class="hero-circle"></div>
+    <img src="images/hero.jpg" alt="Collection de compléments sportifs">
+    <span class="hero-stamp">TRAIN<br>HARD.</span>
+  </div>
+</section>
 
-    <div class="hero-art">
-      <div class="hero-glow"></div>
-      <div class="hero-circle">FORGE<br>YOUR<br>LIMITS</div>
-      <div class="hero-tub">
-        <div class="tub-lid"></div>
-        <div class="tub-label">
-          <span>FORGE</span>
-          <strong>WHEY<br>PROTEIN</strong>
-          <small>PREMIUM FORMULA</small>
-          <b>100%</b>
-        </div>
-      </div>
-      <div class="floating-tag">POWER<br>YOUR DAY</div>
-    </div>
-  </section>
+<div class="ticker">
+  <div>NO EXCUSES ✳ STRONGER EVERY DAY ✳ PUSH YOUR LIMITS ✳ NO EXCUSES ✳</div>
+</div>
 
-  <div class="ticker">
-    <div>TRAIN HARD ✳ STAY FOCUSED ✳ PUSH YOUR LIMITS ✳ FORGE YOUR FUTURE ✳ TRAIN HARD ✳</div>
+<section class="products-section" id="products">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">NOTRE SÉLECTION</p>
+      <h2>SHOP <span>SUPPLEMENTS.</span></h2>
+    </div>
+    <p>Les essentiels pour accompagner tes entraînements.</p>
   </div>
 
-  <section class="shop-section" id="shop">
-    <div class="section-heading">
-      <div>
-        <p class="eyebrow">OUR COLLECTION</p>
-        <h2>SHOP <span>SUPPLEMENTS.</span></h2>
-      </div>
-      <p>Les essentiels pour accompagner<br>ta progression.</p>
+  <div class="toolbar">
+    <div class="filters">
+      <button class="filter active" data-category="all">Tous</button>
+      <button class="filter" data-category="protein">Protéines</button>
+      <button class="filter" data-category="creatine">Créatine</button>
+      <button class="filter" data-category="preworkout">Pré-workout</button>
+      <button class="filter" data-category="accessories">Accessoires</button>
     </div>
+    <select id="sort">
+      <option value="default">Trier par</option>
+      <option value="low">Prix croissant</option>
+      <option value="high">Prix décroissant</option>
+      <option value="name">Nom</option>
+    </select>
+  </div>
 
-    <div class="shop-controls">
-      <div class="filters">
-        <button class="filter active" data-filter="all">Tous</button>
-        <button class="filter" data-filter="protein">Protéines</button>
-        <button class="filter" data-filter="creatine">Créatine</button>
-        <button class="filter" data-filter="preworkout">Pré-workout</button>
-        <button class="filter" data-filter="vitamins">Vitamines</button>
-      </div>
-      <select id="sort">
-        <option value="default">Trier par</option>
-        <option value="low">Prix croissant</option>
-        <option value="high">Prix décroissant</option>
-      </select>
-    </div>
+  <div class="product-grid" id="product-grid"></div>
+</section>
 
-    <div id="product-grid" class="product-grid"></div>
-  </section>
+<section class="about-section" id="about">
+  <div class="about-image">
+    <img src="images/gym.jpg" alt="Entraînement sportif">
+  </div>
+  <div class="about-copy">
+    <p class="eyebrow">MORE THAN SUPPLEMENTS</p>
+    <h2>DISCIPLINE<br>BUILDS <span>RESULTS.</span></h2>
+    <p>La performance commence par la régularité, l'entraînement et une bonne hygiène de vie. Découvre nos produits et trouve ceux qui correspondent à tes objectifs.</p>
+    <a href="#products" class="text-link">EXPLORER LA COLLECTION ↗</a>
+  </div>
+</section>
 
-  <section class="stacks" id="stacks">
-    <div class="stack-content">
-      <p class="eyebrow">SMART COMBINATIONS</p>
-      <h2>YOUR GOALS.<br>YOUR <span>STACK.</span></h2>
-      <p>Construis une routine adaptée à tes objectifs sportifs.</p>
-      <a href="#shop" class="primary-button">EXPLORER LES PRODUITS ↗</a>
-    </div>
-    <div class="stack-symbol">F<span>+</span></div>
-  </section>
-
-  <section class="about" id="about">
-    <p class="eyebrow">THE FORGE MINDSET</p>
-    <h2>PROGRESS IS<br><span>BUILT.</span> NOT GIVEN.</h2>
-    <p>
-      FORGE NUTRITION met en avant une sélection de produits
-      pour accompagner les sportifs dans leur parcours.
-      La discipline commence avec toi.
-    </p>
-  </section>
-
-  <section class="faq">
-    <p class="eyebrow">NEED TO KNOW?</p>
-    <h2>FREQUENTLY ASKED <span>QUESTIONS.</span></h2>
-
-    <details>
-      <summary>Comment commander ?</summary>
-      <p>Ajoute tes produits au panier puis clique sur Commander sur WhatsApp.</p>
-    </details>
-
-    <details>
-      <summary>Comment confirmer ma commande ?</summary>
-      <p>Envoie le message WhatsApp prérempli. Nous te contacterons pour confirmer les détails.</p>
-    </details>
-
-    <details>
-      <summary>Comment connaître les frais de livraison ?</summary>
-      <p>Contacte-nous sur WhatsApp pour connaître les frais selon ta ville.</p>
-    </details>
-  </section>
-
-  <section class="newsletter">
-    <p class="eyebrow">STAY IN THE GAME</p>
-    <h2>FOLLOW THE <span>MOVEMENT.</span></h2>
-    <p>Retrouve nos nouveautés et actualités sur Instagram.</p>
-    <a class="primary-button" href="https://instagram.com/TON_INSTAGRAM" target="_blank" rel="noopener">
-      SUIVRE SUR INSTAGRAM ↗
-    </a>
-  </section>
+<section class="contact-section" id="contact">
+  <p class="eyebrow">RESTONS CONNECTÉS</p>
+  <h2>LET'S <span>CONNECT.</span></h2>
+  <p>Une question sur un produit ou une commande ? Contacte-nous directement.</p>
+  <div class="contact-links">
+    <a id="contact-whatsapp" href="#" target="_blank">WHATSAPP ↗</a>
+    <a id="contact-instagram" href="#" target="_blank">INSTAGRAM ↗</a>
+  </div>
+</section>
 </main>
 
 <footer class="footer">
-  <a href="#" class="logo">FORGE<span>.</span></a>
-  <p>BUILT FOR PROGRESS.</p>
-  <div class="footer-links">
-    <a href="#shop">Produits</a>
-    <a href="https://instagram.com/TON_INSTAGRAM" target="_blank" rel="noopener">Instagram ↗</a>
-    <a href="#" id="footer-whatsapp">WhatsApp ↗</a>
+  <a class="logo" href="#">FORGE<span>.</span></a>
+  <p>TRAIN HARD. STAY CONSISTENT.</p>
+  <div>
+    <a id="footer-instagram" href="#" target="_blank">Instagram ↗</a>
+    <a id="footer-whatsapp" href="#" target="_blank">WhatsApp ↗</a>
   </div>
   <small>© 2026 FORGE NUTRITION. Tous droits réservés.</small>
 </footer>
 
-<div class="backdrop" id="backdrop"></div>
+<div class="overlay" id="overlay"></div>
 
 <aside class="cart-drawer" id="cart-drawer">
   <div class="drawer-header">
-    <h3>TON PANIER <span id="cart-title-count">0</span></h3>
-    <button id="cart-close" aria-label="Fermer">✕</button>
+    <h2>TON PANIER (<span id="cart-title-count">0</span>)</h2>
+    <button id="cart-close">✕</button>
   </div>
-
   <div id="cart-items"></div>
-  <p id="cart-empty">Ton panier est vide.</p>
-
-  <div id="cart-footer">
-    <div class="subtotal">
-      <span>Sous-total</span>
-      <strong id="cart-subtotal">0 DH</strong>
-    </div>
-    <p class="shipping-note">Livraison à confirmer sur WhatsApp.</p>
-    <button class="checkout-button" id="checkout">
-      COMMANDER SUR WHATSAPP ↗
-    </button>
-    <button class="cart-continue" id="cart-continue">Continuer mes achats</button>
+  <div class="cart-empty" id="cart-empty">Ton panier est vide.</div>
+  <div class="cart-footer" id="cart-footer">
+    <div class="subtotal"><span>Total</span><strong id="subtotal">0 DH</strong></div>
+    <button id="checkout" class="primary-btn full">COMMANDER SUR WHATSAPP ↗</button>
+    <button id="continue-shopping" class="continue">Continuer mes achats</button>
   </div>
 </aside>
 
-<div class="search-overlay" id="search-overlay">
-  <button class="close-search" id="search-close">✕</button>
-  <h2>FIND YOUR <span>FUEL.</span></h2>
-  <input id="search-input" type="search" placeholder="Rechercher un produit...">
-  <div id="search-results"></div>
+<div class="search-modal" id="search-modal">
+  <div class="search-box">
+    <button id="search-close" class="search-close">✕</button>
+    <h2>RECHERCHER</h2>
+    <input id="search-input" type="search" placeholder="Nom du produit...">
+    <div id="search-results"></div>
+  </div>
 </div>
 
 <div class="toast" id="toast"></div>
-<button class="back-to-top" id="back-top" aria-label="Retour en haut">↑</button>
 
 <script src="script.js"></script>
 </body>
